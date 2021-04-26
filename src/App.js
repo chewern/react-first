@@ -6,6 +6,8 @@ import About from './components/About'
 import { useState, useEffect } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
+let myTitle = "Task Tracker"
+
 //useState is called a hook.
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false);
@@ -87,7 +89,7 @@ const App = () => {
     <Router>
     <div className="container"> {/*className determines the type of object. 
       Try changing to header */}
-      <Header showAdd={showAddTask} onAdd={() => setShowAddTask(!showAddTask)} title="Zim Tracker"/>
+      <Header showAdd={showAddTask} onAdd={() => setShowAddTask(!showAddTask)} title={myTitle} />
       <Route path='/' exact render={(props) =>(
         <>
           {showAddTask && <AddTask onAdd={addTask} />}
