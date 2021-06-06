@@ -11,5 +11,6 @@ in the sub-folder `/react-first/`.
 1. Upon completion of your source code, go to terminal in the project root folder, and type `npm run build`. This will produce the 
 production code of project neatly in the `build` sub-folder.
 2. Copy the entire content of the `build` sub-folder into the location where you will host your website.
-3. To host this website under Github **for free**, follow the steps [here](https://pages.github.com/).
-4. Enjoy your new **free** website with the site address provided by Github!
+3. To host this website under Github **for free**, follow the steps [here](https://pages.github.com/). You should use the index.html
+that is already built by npm in Step 1 above.
+5. Enjoy your new **free** website with the site address provided by Github!
